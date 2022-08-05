@@ -27,6 +27,11 @@ import PropTypes from 'prop-types';
 			</nav>
 	 	);
 }
+Header.defaultProps = {
+	title:"Your Title Here",
+	serachBar: true
+}
 Header.propTypes = {
-	title: PropTypes.string
+	title: PropTypes.string,
+	serachBar: PropTypes.bool
 }

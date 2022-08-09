@@ -7,8 +7,11 @@ import { useState } from 'react';
  		e.preventDefault();
  		if(!title || !desc){
  			alert("Title or Description cannot be blank")
- 		}
- 		props.addTodos(title,desc);
+ 		}else{
+	 		props.addTodos(title,desc);
+	 		setTitle("");
+	 		setDesc("");
+	 	}
 
  	}
 	return (
